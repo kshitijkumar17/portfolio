@@ -447,28 +447,28 @@ img{
     width: 60%;
 }
 .skills_react{
-    width: 70%;
+    width: 50%;
 }
 .skills_python{
     width: 70%;
 }
 .skills_php{
-    width: 60%;
+    width: 40%;
 }
 .skills_node{
-    width: 50%;
+    width: 30%;
 }
 .skills_firebase{
     width: 60%;
 }
 .skills_figma{
-    width: 80%;
+    width: 60%;
 }
 .skills_adobexd{
-    width: 75%;
+    width: 80%;
 }
 .skills_illustrator{
-    width: 90%;
+    width: 80%;
 }
 .skills_android{
     width: 80%;
@@ -839,7 +839,6 @@ img{
         justify-self: center;
     }
     .about_container,
-    .skills_container,
     .certs_container,
     .contact_container,
     .footer_container{
