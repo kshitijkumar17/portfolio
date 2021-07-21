@@ -348,6 +348,11 @@ img{
     background-color: transparent;
     color: var(--first-color-alt);
 }
+.button-submit{
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
 
 
 /*---- ABOUT ME ----*/
@@ -661,6 +666,8 @@ img{
 
 
 /*---- PORTFOLIO ----*/
+
+
 
 
 /*---- CONTACT ----*/

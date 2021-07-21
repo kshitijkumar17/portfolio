@@ -109,6 +109,10 @@ modelCloses.forEach((modelClose) => {
 })
 
 
+// -------------- Portfolio -------------------
+
+
+
 // ------- Show Scroll to top button ------------
 function scrollTop() {
     const scrollTop = document.getElementById('scroll-top');
@@ -140,3 +144,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// ----- FavIcon ----------
+const faviconTag = document.getElementById("faviconTag");
+const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+const changeFavicon = () => {
+    if (isDark.matches) faviconTag.href = "images/favicondark.png";
+    else faviconTag.href = "images/faviconlight.png";
+  };
+  
+changeFavicon();
+
+setInterval(changeFavicon, 1000);
