@@ -666,7 +666,90 @@ img{
 
 
 /*---- PORTFOLIO ----*/
+.swiper-container{
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    filter: blur(10px);
+    background: var(--container-color);
+    border-radius: 10px;
+}
+.swiper-slide-active{
+    filter: blur(0px);
+    background: var(--container-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.projectsBox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+}
 
+.swiper-container-3d .swiper-slide-show-left,
+.swiper-container-3d .swiper-slide-show-right{
+    background-image: none;
+}
+
+.card_desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_title{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--title-color);
+}
+.card_tools{
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--title-color);
+}
+.card_img{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card_ext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_demo, .card_code{
+    font-size: 1em;
+    color: var(--first-color);
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-slide{
+        width: 75vw;
+    }
+    .card_desc{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .swiper-slide{
+        width: 75vw;
+    }
+    .card_ext{
+        flex-direction: column;
+    }
+    .card_demo{
+        margin-bottom: var(--mb-0-5);
+    }
+}
 
 
 
@@ -800,8 +883,8 @@ img{
 /*---- Small Devices ----*/
 @media screen and (max-width: 350px){
     .container{
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
+        margin-left: var(--mb-0-5);
+        margin-right: var(--mb-0-5);
     }
     .nav_menu{
         padding: 2rem 0.25rem 4rem;

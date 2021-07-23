@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -644,7 +645,107 @@
             <!--Portfolio-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section_title">Projects</h2>
-                <span class="section_subtitle">Some of my work</span>
+                <span class="section_subtitle">Swipe and check out some of my work</span>
+
+                <!-- new stuff -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">Portfolio Website</h3>
+                                    <p class="card_tools">HTML, CSS, JS, PHP</p>
+                                </div>
+                                <img src="images/portfolio.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">Weather App</h3>
+                                    <p class="card_tools">HTML, CSS, JavaScript</p>
+                                </div>
+                                <img src="images/weather.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">Sample Website</h3>
+                                    <p class="card_tools">HTML, CSS, PHP</p>
+                                </div>
+                                <img src="images/sample.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">XnO</h3>
+                                    <p class="card_tools">Java</p>
+                                </div>
+                                <img src="images/xno.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">TapItOut</h3>
+                                    <p class="card_tools">Flutter</p>
+                                </div>
+                                <img src="images/tapitout.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <div class="card_desc">
+                                    <h3 class="card_title">Search Bar</h3>
+                                    <p class="card_tools">HTML, CSS</p>
+                                </div>
+                                <img src="images/search.png" class="card_img">
+                                <div class="card_ext">
+                                    <p class="card_demo"><a>View Demo</a> <i class="uil uil-arrow-up-right"></i></p>
+                                    <p class="card_code"><a>Source Code</a> <i class="uil uil-arrow"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="projectsBox">
+                                <img src="quote.png" class="quote">
+                                <div class="content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus voluptatum, blanditiis quam porro id officia ducimus cupiditate aperiam! Expedita sapiente asperiores nostrum exercitationem possimus quasi est corporis natus voluptatem!</p>
+                                    <div class="details">
+                                        <div class="imgBx">
+                                            <img src="avatar.png">
+                                        </div>
+                                        <h3>Someone Famous<br><span>Designer</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                    </div>
+                </div>
+                <!-- new stuff -->
 
             </section>
 
@@ -758,6 +859,23 @@
 
         <!-----SWIPER JS----->
         <!-- <script src=""></script> -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                },
+                loop: true,
+            });
+        </script>
 
         <!----jQuery---->
         <!-- <script> 
