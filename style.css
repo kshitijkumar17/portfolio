@@ -274,7 +274,7 @@ img{
     fill: var(--first-color);
 }
 .home_blob-img{
-    width: 170px;
+    width: 300px;
 }
 .home_data{
     grid-column: 1/3;
@@ -313,6 +313,60 @@ img{
 .home_scroll-arrow{
     font-size: 1.25rem;
 }
+
+
+
+/* ----- typing text -------*/
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+.wrapper .dynamic-txts{
+    margin-left: 10px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    color: var(--first-color);
+    list-style: none;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -96px;
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    background: var(--body-color);
+    border-left: 2px solid var(--first-color);
+    animation: typing 2s steps(25) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 30px;
+    }
+}
+/* ----- typing text -------*/
+
 
 
 /*---- BUTTONS ----*/
@@ -898,6 +952,9 @@ img{
     .home_blob{
         width: 180px;
     }
+    .home_img{
+        width: 200px;
+    }
     .skills_title{
         font-size: var(--normal-font-size);
     }
@@ -927,6 +984,7 @@ img{
     .home_img{
         order: 1;
         justify-self: center;
+        width: 200px;
     }
     .about_container,
     .certs_container,
@@ -992,6 +1050,9 @@ img{
     }
     .home_blob{
         width: 270px;
+    }
+    .home_img{
+        width: 250px;
     }
     .home_scroll{
         display: block;
